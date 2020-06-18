@@ -4,7 +4,7 @@ class Palindrome {
     let str: string = arg.toString();
     str = str.toLowerCase();
 
-    let len: number = str.length - 1;
+    const len: number = str.length - 1;
     for (let idx: number = 0; idx < str.length / 2; ++idx) {
       if (str[idx] !== str[len - idx]) {
         return false;
